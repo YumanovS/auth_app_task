@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>auth</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+
+<script src="scripts.js">	
+</script>
+	
+</head>
+
+<body>
+	<div id="loading">
+		<div class="wrapper">
+			
+			<div class="main">
+				<div class="mobile_signals">
+					
+					<div class="left">
+						<img class="ico_signal" src="img/Signal.png">
+						<p class="tele2">Tele-2</p>
+					</div>
+					
+					<div class="right">
+						<img class="ico_power" src="img/Reserve.png">
+						<img class="ico_wifi" src="img/Wi–Fi.png">
+						<img class="ico_bluetooth" src="img/Bluetooth.png">
+					</div>
+				</div>
+				
+				<img class="spin" src="img/Vector3.png">
+			</div>
+			
+			<div class="foot_logo">
+				<img src="img/logo4.png">
+			</div>
+		</div>
+	</div>
+	<div id="auth">
+		<div class="wrapper">
+			
+			<div class="logo">
+				<div class="mobile_signals">
+					
+					<div class="left">
+						<img class="ico_signal" src="img/Signal.png">
+						<p class="tele2">Tele-2</p>
+					</div>
+					
+					<div class="right">
+						<img class="ico_power" src="img/Reserve.png">
+						<img class="ico_wifi" src="img/Wi–Fi.png">
+						<img class="ico_bluetooth" src="img/Bluetooth.png">
+					</div>
+				</div>
+				
+				<img class="image" src="img/logo4.png">
+			</div>
+			
+		  	<div class="block">
+				<button class="login" onclick="return show('auth_login','auth');">
+					<p>Войти</p>
+				</button>
+				
+				<button  class="logup" onclick="return show('auth_register','auth');">
+					<p>Регистрация</p>
+		  		</button>
+				
+				<div class="slogan">
+					Linker - электронные визитки
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="auth_login">	
+		<div class="wrapper">
+			
+			<div class="logo">
+				<div class="mobile_signals">
+					
+					<div class="left">
+						<img class="ico_signal" src="img/Signal.png">
+						<p class="tele2">Tele-2</p>
+					</div>
+					
+					<div class="right">
+						<img class="ico_power" src="img/Reserve.png">
+						<img class="ico_wifi" src="img/Wi–Fi.png">
+						<img class="ico_bluetooth" src="img/Bluetooth.png">
+					</div>
+				</div>
+				
+				<img class="image1" src="img/logo4.png">
+			</div>
+			
+		  	<div class="block">
+				<p class="e-mail">E-mail</p>
+				<input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" class="input_email"/>
+				
+			  	<p class="password">Пароль</p>
+				<input type="password" class="input_password"/>
+
+				<p class="forgot_password"><a href="*">Забыли пароль?</a></p>
+				<button class="login">
+					<p>Войти</p>
+				</button>
+
+				<div class="create_new_account">
+					<p>У вас нет аккаунта? <a onclick="return show('auth_register','auth_login');">Зарегистрироваться</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="auth_register">
+		<div class="wrapper">
+			
+			<div class="logo">
+				<div class="mobile_signals">
+					
+					<div class="left">
+						<img class="ico_signal" src="img/Signal.png">
+						<p class="tele2">Tele-2</p>
+					</div>
+					
+					<div class="right">
+						<img class="ico_power" src="img/Reserve.png">
+						<img class="ico_wifi" src="img/Wi–Fi.png">
+						<img class="ico_bluetooth" src="img/Bluetooth.png">
+					</div>
+				</div>
+				
+				<img class="image2" src="img/logo4.png">
+			</div>
+		
+			<div class="block">
+				<p class="e-mail">E-mail</p>
+				<input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="input_email" />
+
+				<div id="error"></div>
+
+				<p class="password">Пароль</p>
+				<input type="password" id="input_password"/>
+				<div id="error2"></div>
+
+				<p class="password">Повторите пароль</p>
+				<input type="password" id="input_password2"/>
+				<div id="error3"></div>
+
+				<button onClick="check();" class="login">
+					<p>Регистрация</p>
+				</button>
+
+				<div class="policy">
+					<p>Регистрируясь, Вы соглашаетесь</p>
+				</div>
+				<div class="policy2">
+					<p>с <a href="*">политикой конфиденциальности</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
